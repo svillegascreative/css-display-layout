@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Helvetica, "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
   line-height: 2;
 }
@@ -56,16 +56,20 @@ nav a {
 }
 
 /* gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .gallery li {
   width: 33%;
-  display: inline-block;
   margin: 5px 1px;
 }
 .gallery img {
   width: 100%;
   max-width: 100%;
   display: block;
-  margin-bottom: 2px;
+  margin: 0 auto;
 }
 .gallery div {
   background-color: #FFD600;
